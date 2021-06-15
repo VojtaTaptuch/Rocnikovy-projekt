@@ -12,29 +12,42 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styly/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Rocnikovy projekt</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Historie</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Moje doporučení</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ještě nevím</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">     
+        <a class="navbar-brand active" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="stranky/historie.html">Historie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stranky/turnaje.html">Největší turnaje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stranky/czesport.html">Esport u nás</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stranky/kviz.html">Kvíz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stranky/mediaverejnost.html">Média a veřejnost</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <header class="jumbotron jumbotron-fluid text-md-center">
+    <header class="jumbotron jumbotron-fluid text-md-center pt-6">
       <div class="container">
-        <h1 class="text-dark display-2">Esport</h1>
+        <h1 class="text-dark display-2 pt-5">Esport
+        </h1>
         <p class="text-dark">
           Vítejte na mé webové stránce. Tato stránka se bude týkat všecho
           ohledně esportu a informací kolem něho.
@@ -43,7 +56,7 @@
     </header>
 
     <main>
-      <div class="jumbotron jumbotron-fluid bg-secondary text-light">
+      <div class=" jumbotron jumbotron-fluid bg-secondary text-light">
         <div class="container pt-2">
           <h1>Co je to ten Esport?</h1>
           <p>
@@ -99,7 +112,7 @@
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-lg-3">
             <div class="card text-left">
-                <img class="card-img-top" src="img/caps.png" alt="Caps" class="img-responsive">
+                <img class="card-img-top img-responsive" src="img/caps.png" alt="Caps">
                 <div class="card-body">
                     <h4 class="card-title">Caps
                     </h4>
@@ -109,7 +122,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-lg-3">
             <div class="card text-left">
-                <img class="card-img-top" src="img/s1mple.jpg" alt="S1mple" class="img-responsive">
+                <img class="card-img-top img-responsive" src="img/s1mple.jpg" alt="S1mple">
                 <div class="card-body">
                     <h4 class="card-title">S1mple</h4>
                     <p class="card-text">Jeden z nejlepších hráču hry CS:GO, je z Ukrajiny a hraje za tým Natus Vincere, několikrát se zúčastnil ,,světového šampionátu" neboli MAJOR</p>
@@ -118,7 +131,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-lg-3">
             <div class="card text-left">
-                <img class="card-img-top" src="img/notail.jpg" alt="N0tail" class="img-responsive">
+                <img class="card-img-top img-responsive" src="img/notail.jpg" alt="N0tail">
                 <div class="card-body">
                     <h4 class="card-title">N0tail</h4>
                     <p class="card-text">Profesionální hráč Doty 2, hraje za tým OG, patří mezi hráče co mají největší výdělky z výher v turnajích a to okolo 7 milionu dolarů</p>
@@ -128,7 +141,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-lg-3">
           <div class="card text-left">
-              <img class="card-img-top" src="img/bugha.jpg" alt="Bugha" class="img-responsive">
+              <img class="card-img-top img-responsive" src="img/bugha.jpg" alt="Bugha">
               <div class="card-body">
                   <h4 class="card-title">Bugha</h4>
                   <p class="card-text">Profesionální hráč Fortnitu, vyhrál jako 1. World cup, kde byla hlavní cena 3 miliony dolarů, jeden z nejznámějších hráčů této hry</p>
@@ -136,8 +149,81 @@
               </div>
           </div>
       </div>
+    </div>
 
 
     </main>
+    <footer class="text-center text-lg-start bg-light text-muted">
+
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+
+        <div class="me-5 d-none d-lg-block">
+          <span>Sociální sítě</span>
+        </div>
+        <div>
+          <a href="https://twitter.com/VTaptuch" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/vojta_chief/" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/VojtaTaptuch" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Esport
+              </h6>
+              <p>
+                Děkuji za navštěvu mé stránky. Všechen obsah je autorsky chráněný.
+              </p>
+            </div>
+    
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+              <h6 class="text-uppercase fw-bold mb-4">
+                Různé linky
+              </h6>
+              <p>
+                <a href="https://cs.wikipedia.org/wiki/Elektronický_sport" target="_blank" class="text-reset">Wikipedie</a>
+              </p>
+              <p>
+                <a href="https://www.gamepedia.com" target="_blank" class="text-reset">Gamepedia</a>
+              </p>
+              <p>
+                <a href="https://lolesports.com" target="_blank" class="text-reset">Lol Esports</a>
+              </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+              <h6 class="text-uppercase fw-bold mb-4">
+                Kontakty
+              </h6>
+              <p><i class="fas fa-home me-3"></i> U Střelnice 6, Opava</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                vojta.taptuch@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> 730944560</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        <p>© 2021 Copyright Vojtěch Ťapťuch</p>
+      </div>
+
+    </footer>
   </body>
 </html>

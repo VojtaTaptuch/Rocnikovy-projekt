@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styly/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <title>Rocnikovy projekt</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand active" href="../index.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../stranky/historie.html">Historie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="turnaje.html">Největší turnaje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="czesport.html">Esport u nás</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Kvíz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mediaverejnost.html">Média a veřejnost</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="jumbotron jumbotron-fluid text-md-center pt-6">
+        <div class="container">
+          <h1 class="text-dark display-2 pt-5">Kvíz o Esportu</h1>
+          <p class="text-dark pt-2">
+            Různé otázky na esport a jeho působení u nás
+          </p>
+        </div>
+      </header>
+      <main class="container pt-2 pb-3">
+        <form action="#" method="POST">
+            <p class="alert bg-secondary otazka">1. Rok pořádání prvního esportového turnaje?</p>
+            <div class="form-group row">
+                <label for="esport" class="col-sm-3 col-form-label">Rok pořádání</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" name="esport" min="1500" max="2021" id="esport" value="1900">
+                </div>
+                
+            </div>
+            <p class="alert alert-success odpoved collapse">1972</p>
+            <hr>
+            <p class="alert bg-secondary otazka">2. Jméno evropské ligy v League of Legends</p>
+            <div class="form-group row">
+                <label for="turnaj" class="col-sm-3 col-form-label">Jméno ligy</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="turnaj" id="turnaj" placeholder="Zadejte jméno">
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse">LEC</p>
+            <hr>
+            <p class="alert bg-secondary otazka">3. Napište nějaký CZ esport tým</p>
+            <div class="form-group row">
+                <label for="tym" class="col-sm-3 col-form-label">Název týmu</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="tym" id="tym" placeholder="Zadejte název">
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse">Esuba, Team Sampi nebo Sinners</p>
+            <hr>
+            <p class="alert bg-secondary otazka">4. Vyberte hru ve které se pořádal první esportový turnaj.</p>
+            <div class="form-group row">
+                <label for="event" class="col-sm-3 col-form-label">Jméno hry</label>
+                <div class="col-sm-3">
+                      <select class="form-control" name="event" id="event">
+                        <option>CS:GO</option>
+                        <option>Spacewar</option>
+                        <option>StarCraft</option>
+                        <option>LoL</option>
+                      </select>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse">Spacewar</p>
+            <hr> 
+            <p class="alert bg-secondary otazka">5. Rok vzniku prvního esportového týmu u nás</p>
+            <div class="form-group row">
+                <label for="cztym" class="col-sm-3 col-form-label">Rok vzniku</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" name="cztym" min="1700" max="2021" id="cztym" value="1950">
+                </div>
+                
+            </div>
+            <p class="alert alert-success odpoved collapse">1997</p>
+            <hr>           
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target=".odpoved">Vyhodnotit kvíz</button>
+                </div>
+            </div>
+            
+        </form>
+    </main>
+    <footer class="text-center text-lg-start bg-light text-muted">
+
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        >
+  
+          <div class="me-5 d-none d-lg-block">
+            <span>Sociální sítě</span>
+          </div>
+          <div>
+            <a href="https://twitter.com/VTaptuch" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/vojta_chief/" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/VojtaTaptuch" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </section>
+  
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Esport
+                </h6>
+                <p>
+                  Děkuji za navštěvu mé stránky. Všechen obsah je autorsky chráněný.
+                </p>
+              </div>
+      
+  
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Různé linky
+                </h6>
+                <p>
+                  <a href="https://cs.wikipedia.org/wiki/Elektronický_sport" target="_blank" class="text-reset">Wikipedie</a>
+                </p>
+                <p>
+                  <a href="https://www.gamepedia.com" target="_blank" class="text-reset">Gamepedia</a>
+                </p>
+                <p>
+                  <a href="https://lolesports.com" target="_blank" class="text-reset">Lol Esports</a>
+                </p>
+              </div>
+  
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Kontakty
+                </h6>
+                <p><i class="fas fa-home me-3"></i> U Střelnice 6, Opava</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  vojta.taptuch@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> 730944560</p>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          <p>© 2021 Copyright Vojtěch Ťapťuch</p>
+        </div>
+  
+      </footer>
+</body>
